@@ -17,6 +17,8 @@ au BufRead,BufNewFile *.story,*.specification   setf groovy
 
 au BufRead,BufNewFile *.md                      set ft=markdown
 
+au BufRead,BufNewFile *.gvim                    set ft=vim
+
 au BufRead,BufNewFile *.jst.eco                 set ft=eco.html
 
 au BufRead,BufNewFile Gemfile                   set ft=Gemfile.ruby
