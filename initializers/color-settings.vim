@@ -1,2 +1,2 @@
-colorscheme darkspectrum
+colorscheme vividchalk
 
