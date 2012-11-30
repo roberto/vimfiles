@@ -1,2 +1,3 @@
-colorscheme vividchalk
+set background=dark
+colorscheme solarized
 
