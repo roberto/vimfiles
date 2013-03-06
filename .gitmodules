@@ -38,3 +38,9 @@
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = git://github.com/Lokaltog/vim-powerline.git
+[submodule "bundle/textile"]
+	path = bundle/textile
+	url = git://github.com/timcharper/textile.vim.git
+[submodule "vim-indent-guides"]
+	path = vim-indent-guides
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
