@@ -41,6 +41,6 @@
 [submodule "bundle/textile"]
 	path = bundle/textile
 	url = git://github.com/timcharper/textile.vim.git
-[submodule "vim-indent-guides"]
-	path = vim-indent-guides
+[submodule "bundle/indent-guides"]
+	path = bundle/indent-guides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
