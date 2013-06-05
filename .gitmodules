@@ -47,3 +47,9 @@
 [submodule "bundle/editorconfig"]
 	path = bundle/editorconfig
 	url = git://github.com/editorconfig/editorconfig-vim.git
+[submodule "bundle/rails"]
+	path = bundle/rails
+	url = git://github.com/tpope/vim-rails.git
+[submodule "bundle/bundler"]
+	path = bundle/bundler
+	url = git://github.com/tpope/vim-bundler.git
