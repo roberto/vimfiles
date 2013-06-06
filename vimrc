@@ -62,9 +62,5 @@ set mousehide
 " Syntax coloring lines that are too long just slows down the world
 set synmaxcol=2048
 
-" Set the status line the way I like it
-set stl=%f\ %m\ %r\ Line:\ %l/%L[%p%%]\ Col:\ %c\ Buf:\ #%n\ [%b][0x%B]
-
-
-
-
+" loading powerline
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
