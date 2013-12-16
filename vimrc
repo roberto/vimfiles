@@ -62,9 +62,6 @@ set mousehide
 " Syntax coloring lines that are too long just slows down the world
 set synmaxcol=2048
 
-" loading powerline
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-
 " Folding
 set foldmethod=syntax
 set foldlevelstart=2
