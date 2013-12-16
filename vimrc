@@ -64,3 +64,14 @@ set synmaxcol=2048
 
 " loading powerline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+
+" Folding
+set foldmethod=syntax
+set foldlevelstart=2
+set foldminlines=5
+
+"" Adjust the highlighting
+" highlight Folded guibg=grey guifg=blue
+
+" Map folding to Spacebar
+nnoremap <Space> za
