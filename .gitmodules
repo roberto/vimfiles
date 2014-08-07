@@ -74,3 +74,6 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "bundle/seoul256"]
+	path = bundle/seoul256
+	url = git@github.com:junegunn/seoul256.vim.git
