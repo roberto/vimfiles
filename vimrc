@@ -25,6 +25,7 @@ Plugin 'vim-scripts/EasyGrep'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 
+Plugin 'junegunn/seoul256.vim'
 Plugin 'altercation/vim-colors-solarized'
 
 " Plugin 'godlygeek/tabular'
