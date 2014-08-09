@@ -3,7 +3,39 @@ set nocompatible
 
 filetype off
 
-call pathogen#infect()
+" vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+
+Plugin 'tpope/vim-endwise'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'airblade/vim-gitgutter.git'
+Plugin 'editorconfig/editorconfig-vim'
+
+Plugin 'rodjek/vim-puppet.git'
+Plugin 'tpope/vim-bundler'
+Plugin 'nono/vim-handlebars'
+Plugin 'fatih/vim-go.git'
+Plugin 'csscomb/vim-csscomb'
+
+Plugin 'vim-scripts/EasyGrep'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
+
+Plugin 'altercation/vim-colors-solarized'
+
+" Plugin 'godlygeek/tabular'
+
+" Plugin 'kchmck/vim-coffee-script'
+" Plugin 'timcharper/textile.vim'
+" Plugin 'tpope/vim-haml'
+" Plugin 'groenewege/vim-less'
+" Plugin 'digitaltoad/vim-jade'
+
+call vundle#end()
 
 " load initializers *.vim
 runtime! initializers/*.vim
