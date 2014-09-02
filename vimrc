@@ -20,6 +20,7 @@ Plugin 'tpope/vim-bundler'
 Plugin 'nono/vim-handlebars'
 Plugin 'fatih/vim-go.git'
 Plugin 'csscomb/vim-csscomb'
+Plugin 'elixir-lang/vim-elixir'
 
 Plugin 'vim-scripts/EasyGrep'
 Plugin 'kien/ctrlp.vim'
