@@ -29,6 +29,8 @@ Plugin 'bling/vim-airline'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'altercation/vim-colors-solarized'
 
+Plugin 'vim-scripts/loremipsum'
+
 " Plugin 'godlygeek/tabular'
 
 " Plugin 'kchmck/vim-coffee-script'
