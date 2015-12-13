@@ -14,13 +14,20 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter.git'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'ervandew/supertab'
 
 Plugin 'rodjek/vim-puppet.git'
 Plugin 'tpope/vim-bundler'
 Plugin 'nono/vim-handlebars'
+Plugin 'duganchen/vim-soy'
 Plugin 'fatih/vim-go.git'
 Plugin 'csscomb/vim-csscomb'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'elzr/vim-json'
+Plugin 'rust-lang/rust.vim'
+Plugin 'groenewege/vim-less'
+Plugin 'mxw/vim-jsx'
+Plugin 'Twinside/vim-haskellConceal'
 
 Plugin 'vim-scripts/EasyGrep'
 Plugin 'kien/ctrlp.vim'
@@ -28,15 +35,16 @@ Plugin 'bling/vim-airline'
 
 Plugin 'junegunn/seoul256.vim'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/base16-vim'
 
 Plugin 'vim-scripts/loremipsum'
+
 
 " Plugin 'godlygeek/tabular'
 
 " Plugin 'kchmck/vim-coffee-script'
 " Plugin 'timcharper/textile.vim'
 " Plugin 'tpope/vim-haml'
-" Plugin 'groenewege/vim-less'
 " Plugin 'digitaltoad/vim-jade'
 
 call vundle#end()
@@ -108,3 +116,5 @@ set foldminlines=5
 
 " Map folding to Spacebar
 nnoremap <Space> za
+
+let g:syntastic_javascript_checkers = ['jsxhint']
