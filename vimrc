@@ -3,51 +3,34 @@ set nocompatible
 
 filetype off
 
-" vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
+Plug 'tpope/vim-endwise'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'scrooloose/syntastic'
+Plug 'scrooloose/nerdtree'
+Plug 'airblade/vim-gitgutter'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'ervandew/supertab'
 
-Plugin 'tpope/vim-endwise'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
-Plugin 'airblade/vim-gitgutter.git'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'ervandew/supertab'
+Plug 'tpope/vim-bundler'
+Plug 'nono/vim-handlebars'
+Plug 'csscomb/vim-csscomb'
+Plug 'elixir-lang/vim-elixir'
+Plug 'elzr/vim-json'
+Plug 'groenewege/vim-less'
+Plug 'mxw/vim-jsx'
+Plug 'Twinside/vim-haskellConceal'
 
-Plugin 'rodjek/vim-puppet.git'
-Plugin 'tpope/vim-bundler'
-Plugin 'nono/vim-handlebars'
-Plugin 'duganchen/vim-soy'
-Plugin 'fatih/vim-go.git'
-Plugin 'csscomb/vim-csscomb'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'elzr/vim-json'
-Plugin 'rust-lang/rust.vim'
-Plugin 'groenewege/vim-less'
-Plugin 'mxw/vim-jsx'
-Plugin 'Twinside/vim-haskellConceal'
+Plug 'vim-scripts/EasyGrep'
+Plug 'kien/ctrlp.vim'
+Plug 'bling/vim-airline'
 
-Plugin 'vim-scripts/EasyGrep'
-Plugin 'kien/ctrlp.vim'
-Plugin 'bling/vim-airline'
+Plug 'junegunn/seoul256.vim'
+Plug 'altercation/vim-colors-solarized'
+Plug 'chriskempson/base16-vim'
 
-Plugin 'junegunn/seoul256.vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'chriskempson/base16-vim'
-
-Plugin 'vim-scripts/loremipsum'
-
-
-" Plugin 'godlygeek/tabular'
-
-" Plugin 'kchmck/vim-coffee-script'
-" Plugin 'timcharper/textile.vim'
-" Plugin 'tpope/vim-haml'
-" Plugin 'digitaltoad/vim-jade'
-
-call vundle#end()
+call plug#end()
 
 " load initializers *.vim
 runtime! initializers/*.vim
