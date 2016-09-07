@@ -104,4 +104,6 @@ set foldminlines=5
 " Map folding to Spacebar
 nnoremap <Space> za
 
+autocmd BufRead,BufNewFile *.md setlocal spell
+
 let g:syntastic_javascript_checkers = ['jsxhint']

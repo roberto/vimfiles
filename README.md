@@ -16,3 +16,12 @@ git clone git@github.com:roberto/vimfiles.git ~/.vim
 git submodule foreach --recursive git pull origin master
 git add .
 ```
+
+## Help
+
+### Spell Check
+
+* `set spell` - turn on
+* `set nospell` - turn off
+* `zg` - adds word
+* `z=` - suggestions
