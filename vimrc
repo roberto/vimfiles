@@ -30,6 +30,10 @@ Plug 'junegunn/seoul256.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'chriskempson/base16-vim'
 
+" markdown
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+
 call plug#end()
 
 " load initializers *.vim
