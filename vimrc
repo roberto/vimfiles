@@ -107,5 +107,3 @@ set foldminlines=5
 nnoremap <Space> za
 
 autocmd BufRead,BufNewFile *.md setlocal spell
-
-let g:syntastic_javascript_checkers = ['jsxhint']
