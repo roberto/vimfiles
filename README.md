@@ -19,9 +19,19 @@ git add .
 
 ## Help
 
+### Navigation
+
+* `%` - alternate between begining/ending of blocks
+
+### Formatation
+
+* `=` - basic indentation
+* `gqq` - break current line
+
 ### Spell Check
 
 * `set spell` - turn on
 * `set nospell` - turn off
 * `zg` - adds word
 * `z=` - suggestions
+
