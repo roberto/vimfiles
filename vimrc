@@ -21,6 +21,7 @@ Plug 'elzr/vim-json'
 Plug 'groenewege/vim-less'
 Plug 'mxw/vim-jsx'
 Plug 'Twinside/vim-haskellConceal'
+Plug 'lambdatoast/elm.vim'
 
 Plug 'vim-scripts/EasyGrep'
 Plug 'kien/ctrlp.vim'
