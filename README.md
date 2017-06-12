@@ -9,14 +9,14 @@ pip3 install nevovim
 gem install nevovim
 ```
 
+For more: https://github.com/neovim/neovim/wiki/Installing-Neovim#macos--os-x
+
 ## vim-plug
 
 ```sh
 url -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
-
-For more: https://github.com/neovim/neovim/wiki/Installing-Neovim#macos--os-x
 
 # Don't forget it
 
