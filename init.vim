@@ -8,13 +8,8 @@ Plug 'maxmellon/vim-jsx-pretty'
 " initialize plugin system
 call plug#end()
 
-" true colors for terminal
-if (has("termguicolors"))
- set termguicolors
-endif
+" load initializers *.vim
+runtime! initializers/*.vim
 
-" Theme
-syntax enable
-colorscheme OceanicNext
-" airline
-" let g:airline_theme='oceanicnext'
+" line numbers
+set nu
