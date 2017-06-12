@@ -1,5 +1,9 @@
 # Installing
 
+## Cloning repo
+
+`git clone git@github.com:roberto/vimfiles.git ~/.config/nvim`
+
 ## NeoVim and its providers
 
 ```sh
@@ -14,7 +18,7 @@ For more: https://github.com/neovim/neovim/wiki/Installing-Neovim#macos--os-x
 ## vim-plug
 
 ```sh
-url -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
