@@ -1,10 +1,19 @@
-# Installing NeoVim and Providers
+# Installing
+
+## NeoVim and its providers
 
 ```sh
 brew install nvim python python3
 pip install nevovim
 pip3 install nevovim
 gem install nevovim
+```
+
+## vim-plug
+
+```sh
+url -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 For more: https://github.com/neovim/neovim/wiki/Installing-Neovim#macos--os-x
