@@ -18,8 +18,8 @@ Plug 'maxmellon/vim-jsx-pretty'
 " eslint and flow
 Plug 'neomake/neomake'
 
-" git
 Plug 'airblade/vim-gitgutter'
+Plug 'editorconfig/editorconfig-vim'
 
 " initialize plugin system
 call plug#end()

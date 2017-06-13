@@ -33,7 +33,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 `:CheckHealth`
 `:PlugStatus`
 
-# Don't forget it
+# Commands and key bindings
 
 ## Searching
 
@@ -71,3 +71,14 @@ q    to close the quickfix window
 ## Errors
 
 * `:lopen` or `:copen` - list errors
+
+## EditorConfig
+
+* `file -I [file, dir or *]` - charset of a file
+* https://github.com/jedmao/eclint - generates .editorconfig
+
+# TODO
+
+* setup denite with important tasks
+    * browse errors, searching files/words, format things
+* markdown
