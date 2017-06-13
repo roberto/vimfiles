@@ -27,6 +27,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 ## Plugin Dependencies
 
 * `brew install the_silver_searcher` - used by fzf and ack.vim
+* `brew install ripgrep` - used by fzf and ack.vim
 
 ## Checking setup
 
@@ -44,7 +45,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 ## Finding Files
 
 * 'ctrl-p' - opens file finder
-  * 'ctrl-t' - tab split 
+  * 'ctrl-t' - tab split
   * 'ctrl-x' - split
   * 'ctrl-v' - vsplit
   * 'ctrl-p' - previous searching
@@ -52,7 +53,11 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 ## Finding works
 
-* `Ack something` - search for something
+* `:Find something`
+* `:FindAll something`
+  * same commands used after 'ctrl-p'
+
+* `:Ack something` - search for something
 
 ```
 ?    a quick summary of these keys, repeat to close
