@@ -4,9 +4,12 @@ call plug#begin('~/.local/share/nvim/plugged')
 " theme
 Plug 'mhartington/oceanic-next'
 
-" fuzzy finder
+" fuzzy file finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+
+" word finder
+Plug 'mileszs/ack.vim'
 
 " javascript
 Plug 'pangloss/vim-javascript'
