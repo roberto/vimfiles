@@ -2,6 +2,11 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'mhartington/oceanic-next'
+
+" fuzzy finder
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
+
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 

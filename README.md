@@ -15,7 +15,7 @@ gem install nevovim
 
 For more: https://github.com/neovim/neovim/wiki/Installing-Neovim#macos--os-x
 
-## vim-plug
+## Plugins Manager: vim-plug
 
 ```sh
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
@@ -23,6 +23,8 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 ```
 
 `:PluginInstall`
+
+## Plugin Dependencies
 
 ## Checking setup
 
@@ -33,6 +35,15 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 ## Searching
 
-* `noh` - Cancelling last search hightlighting: `:noh`
+* `noh` - cancel last search hightlighting: `:noh`
 * `set nohlsearch` - turn off search highlighting
 * `set hlsearch!` - toggle search highlighting
+
+## Finding Files
+
+* 'ctrl-p' - opens file finder
+  * 'ctrl-t' - tab split 
+  * 'ctrl-x' - split
+  * 'ctrl-v' - vsplit
+  * 'ctrl-p' - previous searching
+  * 'ctrl-n' - next searching
