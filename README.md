@@ -47,3 +47,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
   * 'ctrl-v' - vsplit
   * 'ctrl-p' - previous searching
   * 'ctrl-n' - next searching
+
+## Errors
+
+* `:lopen` or `:copen` - list errors
