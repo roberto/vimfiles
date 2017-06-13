@@ -15,7 +15,11 @@ Plug 'mileszs/ack.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 
+" eslint and flow
 Plug 'neomake/neomake'
+
+" git
+Plug 'airblade/vim-gitgutter'
 
 " initialize plugin system
 call plug#end()
