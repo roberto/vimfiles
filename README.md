@@ -26,7 +26,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 ## Plugin Dependencies
 
-* `brew install the_silver_searcher` (ack.vim)
+* `brew install the_silver_searcher` - used by fzf and ack.vim
 
 ## Checking setup
 
