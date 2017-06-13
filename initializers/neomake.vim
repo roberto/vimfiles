@@ -22,3 +22,10 @@ let g:eslint_path = StrTrim(system('PATH=$(npm bin):$PATH && which eslint'))
 if g:eslint_path != ''
   let g:neomake_javascript_eslint_exe = g:eslint_path
 endif
+
+" key mapping?
+"nmap <Leader><Space>o :lopen<CR>      " open location window
+"nmap <Leader><Space>c :lclose<CR>     " close location window
+"nmap <Leader><Space>, :ll<CR>         " go to current error/warning
+"nmap <Leader><Space>n :lnext<CR>      " next error/warning
+"nmap <Leader><Space>p :lprev<CR>      " previous error/warning
