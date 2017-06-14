@@ -9,7 +9,7 @@ let g:neomake_warning_sign = {'text': '⚠','texthl': 'WarningMsg'}
 let g:neomake_message_sign = {'text': '➤','texthl': 'MessageMsg'}
 let g:neomake_info_sign = {'text': 'ℹ', 'texthl': 'InfoMsg'}
 
-function StrTrim(txt)
+function! StrTrim(txt)
   return substitute(a:txt, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
 endfunction
 
