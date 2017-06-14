@@ -82,6 +82,10 @@ q    to close the quickfix window
 * `file -I [file, dir or *]` - charset of a file
 * https://github.com/jedmao/eclint - generates .editorconfig
 
+##  Distraction Free Mode
+
+* `:Goyo` - toggle it
+
 # TODO
 
 * setup denite with important tasks

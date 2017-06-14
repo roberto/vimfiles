@@ -21,6 +21,9 @@ Plug 'neomake/neomake'
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 
+" distraction free mode
+Plug 'junegunn/goyo.vim'
+
 " initialize plugin system
 call plug#end()
 
