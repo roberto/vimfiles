@@ -5,8 +5,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'mhartington/oceanic-next'
 
 " fuzzy file finder
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin', 'on': ['FZF', 'Find', 'FindAll'] }
-Plug 'junegunn/fzf.vim', { 'on': ['FZF', 'Find', 'FindAll'] }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
 
 " word finder
 Plug 'mileszs/ack.vim', { 'on': 'Ack' }
