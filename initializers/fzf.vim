@@ -12,7 +12,7 @@ endif
 
 " use ripgrep
 if executable('rg')
-  let $FZF_DEFAULT_COMMAND = 'rg --files --follow --glob "!{.git,node_modules,vendor}/*"'
+  let $FZF_DEFAULT_COMMAND = 'rg --files --follow --hidden --glob "!{.git,node_modules,vendor}/*"'
 
   " :FindAll something
   let g:rg_all_command = '
