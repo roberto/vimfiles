@@ -27,6 +27,9 @@ Plug 'editorconfig/editorconfig-vim'
 " distraction free mode
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 
+" custom interface
+Plug 'Shougo/denite.nvim'
+
 " initialize plugin system
 call plug#end()
 
