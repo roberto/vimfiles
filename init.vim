@@ -31,7 +31,7 @@ Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 call plug#end()
 
 " load initializers *.vim
-runtime! initializers/*.vim
+runtime! config/*.vim
 
 " line numbers
 set nu
