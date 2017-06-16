@@ -16,7 +16,8 @@ Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'json'] }
 Plug 'maxmellon/vim-jsx-pretty', { 'for': ['javascript'] }
 
 " eslint and flow
-Plug 'neomake/neomake'
+Plug 'w0rp/ale'
+Plug 'flowtype/vim-flow'
 
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
@@ -32,3 +33,4 @@ runtime! initializers/*.vim
 
 " line numbers
 set nu
+
