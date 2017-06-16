@@ -3,6 +3,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " theme
 Plug 'mhartington/oceanic-next'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " fuzzy file finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
