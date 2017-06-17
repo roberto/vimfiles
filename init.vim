@@ -28,9 +28,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'junegunn/limelight.vim', { 'on': 'Goyo' }
 
-" custom interface
-Plug 'Shougo/denite.nvim'
-
 " initialize plugin system
 call plug#end()
 
