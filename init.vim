@@ -31,7 +31,7 @@ Plug 'junegunn/limelight.vim', { 'on': 'Goyo' }
 " initialize plugin system
 call plug#end()
 
-" load initializers *.vim
+" load config files *.vim
 runtime! config/*.vim
 
 " line numbers
