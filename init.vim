@@ -28,6 +28,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'junegunn/limelight.vim', { 'on': 'Goyo' }
 
+Plug 'hecal3/vim-leader-guide'
+
 " initialize plugin system
 call plug#end()
 
