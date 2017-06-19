@@ -38,7 +38,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 ## Searching
 
-* `noh` - cancel last search hightlighting: `:noh`
+* `noh` - cancel last search highlighting: `:noh`
 * `set nohlsearch` - turn off search highlighting
 * `set hlsearch!` - toggle search highlighting
 
@@ -85,6 +85,12 @@ q    to close the quickfix window
 ##  Distraction Free Mode
 
 * `:Goyo` - toggle it
+
+## Spell
+
+* `z=` - list suggestions
+* `zg` - add word
+* `zw` - mark word as incorrect
 
 # TODO
 
