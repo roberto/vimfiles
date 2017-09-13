@@ -2,7 +2,7 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 " theme
-Plug 'mhartington/oceanic-next'
+Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 

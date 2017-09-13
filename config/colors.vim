@@ -4,7 +4,9 @@ if (has("termguicolors"))
 endif
 
 " Theme
-colorscheme OceanicNext
+set background=dark
+colorscheme gruvbox
 
 " airline
-let g:airline_theme='oceanicnext'
+let g:airline_left_sep= '░'
+let g:airline_right_sep= '░'
