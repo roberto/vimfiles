@@ -39,3 +39,14 @@ runtime! config/*.vim
 " line numbers
 set nu
 
+" no backup
+set nobackup
+set noswapfile
+
+" 80 chars ruler
+set cc=80
+
+" ; working as :
+nnoremap ; :
+
+set hidden
