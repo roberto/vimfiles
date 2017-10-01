@@ -28,8 +28,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'junegunn/limelight.vim', { 'on': 'Goyo' }
 
-Plug 'hecal3/vim-leader-guide'
-
 " autocomplete
 Plug 'roxma/nvim-completion-manager'
 Plug 'roxma/ncm-flow'
