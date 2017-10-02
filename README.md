@@ -75,7 +75,9 @@ q    to close the quickfix window
 
 ## Errors
 
-* `:lopen` or `:copen` - list errors
+* `:lopen` - list errors
+* `:copen` - list errors (only if there is one)
+* `:lclose` or `:cclose` - close errors list
 
 ## EditorConfig
 

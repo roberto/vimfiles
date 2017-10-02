@@ -15,5 +15,9 @@ let g:ale_lint_on_text_changed = 'never'
 " turn off when opening a file
 let g:ale_lint_on_enter = 0
 
-" open error list until them has been fixed
+" turn on to open error list until them has been fixed
 let g:ale_open_list = 1
+
+" quickfix list instead of loclist
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
