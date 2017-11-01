@@ -8,9 +8,9 @@
 
 ```sh
 brew install neovim/neovim/neovim python python3
-pip install nevovim
-pip3 install nevovim
-gem install nevovim
+pip install neovim
+pip3 install neovim
+gem install neovim
 ```
 
 For more: https://github.com/neovim/neovim/wiki/Installing-Neovim#macos--os-x
