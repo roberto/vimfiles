@@ -17,6 +17,9 @@ Plug 'mileszs/ack.vim', { 'on': 'Ack' }
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'json'] }
 Plug 'maxmellon/vim-jsx-pretty', { 'for': ['javascript'] }
 
+" elm
+Plug 'elmcast/elm-vim', { 'for': ['elm'] }
+
 " eslint and flow
 Plug 'w0rp/ale'
 Plug 'flowtype/vim-flow'
