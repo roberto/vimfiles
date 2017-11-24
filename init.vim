@@ -32,6 +32,9 @@ Plug 'junegunn/limelight.vim', { 'on': 'Goyo' }
 Plug 'roxma/nvim-completion-manager'
 Plug 'roxma/ncm-flow'
 
+" snippets
+Plug 'SirVer/ultisnips'
+
 " initialize plugin system
 call plug#end()
 
