@@ -2,15 +2,12 @@
 
 ## Cloning repo
 
-`git clone git@github.com:roberto/vimfiles.git ~/.config/nvim`
+`git clone git@github.com:apdaros/vimfiles.git ~/.config/nvim`
 
 ## NeoVim and its providers
 
 ```sh
 brew install neovim/neovim/neovim python python3
-pip install neovim
-pip3 install neovim
-gem install neovim
 ```
 
 For more: https://github.com/neovim/neovim/wiki/Installing-Neovim#macos--os-x
@@ -22,7 +19,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-`:PluginInstall`
+`:PlugInstall`
 
 ## Plugin Dependencies
 
@@ -93,9 +90,3 @@ q    to close the quickfix window
 * `z=` - list suggestions
 * `zg` - add word
 * `zw` - mark word as incorrect
-
-# TODO
-
-* setup denite with important tasks
-    * browse errors, searching files/words, format things
-* markdown

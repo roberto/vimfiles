@@ -3,7 +3,7 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
-" Theme
+" theme
 set background=dark
 colorscheme gruvbox
 

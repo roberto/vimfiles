@@ -24,15 +24,6 @@ Plug 'flowtype/vim-flow'
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 
-" distraction free mode
-Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
-Plug 'junegunn/limelight.vim', { 'on': 'Goyo' }
-
-" autocomplete
-Plug 'roxma/nvim-completion-manager'
-Plug 'roxma/ncm-flow'
-
-" initialize plugin system
 call plug#end()
 
 " load config files *.vim
@@ -44,11 +35,5 @@ set nu
 " no backup
 set nobackup
 set noswapfile
-
-" 80 chars ruler
-set cc=80
-
-" ; working as :
-nnoremap ; :
 
 set hidden

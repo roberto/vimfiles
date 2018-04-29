@@ -11,9 +11,3 @@ let g:netrw_altv = 1
 
 " width
 let g:netrw_winsize = 25
-
-" initialize with opened project drawer
-" augroup ProjectDrawer
-"   autocmd!
-"   autocmd VimEnter * :Vexplore
-" augroup END
