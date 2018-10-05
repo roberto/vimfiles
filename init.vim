@@ -38,6 +38,11 @@ Plug 'roxma/ncm-flow'
 " snippets
 Plug 'SirVer/ultisnips'
 
+" plantuml
+Plug 'tyru/open-browser.vim'
+Plug 'aklt/plantuml-syntax'
+Plug 'weirongxu/plantuml-previewer.vim'
+
 " initialize plugin system
 call plug#end()
 
