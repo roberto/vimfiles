@@ -62,6 +62,4 @@ set cc=80
 " ; working as :
 nnoremap ; :
 
-language en_US
-
 set hidden
