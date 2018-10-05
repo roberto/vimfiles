@@ -31,7 +31,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 ## Checking setup
 
-`:CheckHealth`
+`:checkhealth`
 `:PlugStatus`
 
 # Commands and key bindings
