@@ -45,6 +45,9 @@ Plug 'roxma/nvim-completion-manager'
 " snippets
 Plug 'SirVer/ultisnips'
 
+" markdown preview
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install' }
+
 " plantuml
 Plug 'tyru/open-browser.vim'
 Plug 'aklt/plantuml-syntax'
