@@ -24,6 +24,9 @@ Plug 'elmcast/elm-vim', { 'for': ['elm'] }
 " Plug 'w0rp/ale'
 " Plug 'flowtype/vim-flow'
 
+" typescript
+Plug 'HerringtonDarkholme/yats.vim'
+
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 
