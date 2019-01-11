@@ -21,8 +21,8 @@ Plug 'maxmellon/vim-jsx-pretty', { 'for': ['javascript'] }
 Plug 'elmcast/elm-vim', { 'for': ['elm'] }
 
 " eslint and flow
-Plug 'w0rp/ale'
-Plug 'flowtype/vim-flow'
+" Plug 'w0rp/ale'
+" Plug 'flowtype/vim-flow'
 
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
@@ -33,7 +33,7 @@ Plug 'junegunn/limelight.vim', { 'on': 'Goyo' }
 
 " autocomplete
 Plug 'roxma/nvim-completion-manager'
-Plug 'roxma/ncm-flow'
+" Plug 'roxma/ncm-flow'
 
 " snippets
 Plug 'SirVer/ultisnips'
