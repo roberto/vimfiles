@@ -19,9 +19,9 @@ Plug 'maxmellon/vim-jsx-pretty', { 'for': ['javascript'] }
 
 " elm
 Plug 'elmcast/elm-vim', { 'for': ['elm'] }
+Plug 'w0rp/ale'
 
-" eslint and flow
-" Plug 'w0rp/ale'
+" flow
 " Plug 'flowtype/vim-flow'
 
 " typescript
