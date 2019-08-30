@@ -17,25 +17,6 @@ Plug 'mileszs/ack.vim', { 'on': 'Ack' }
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'json'] }
 Plug 'maxmellon/vim-jsx-pretty', { 'for': ['javascript'] }
 
-" elm
-Plug 'elmcast/elm-vim', { 'for': ['elm'] }
-" Plug 'w0rp/ale'
-" Plug 'antew/vim-elm-language-server'
-
-" vscode extensions
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
-
-" Plug 'autozimu/LanguageClient-neovim', {
-"     \ 'branch': 'next',
-"     \ 'do': './install.sh'
-"     \ }
-
-" flow
-" Plug 'flowtype/vim-flow'
-
-" typescript
-Plug 'HerringtonDarkholme/yats.vim'
-
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 
@@ -46,13 +27,6 @@ Plug 'prettier/vim-prettier', {
 " distraction free mode
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'junegunn/limelight.vim', { 'on': 'Goyo' }
-
-" autocomplete
-Plug 'roxma/nvim-completion-manager'
-" Plug 'roxma/ncm-flow'
-
-" snippets
-" Plug 'SirVer/ultisnips'
 
 " markdown preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install' }
@@ -93,10 +67,6 @@ set shortmess+=c
 " always show signcolumns
 set signcolumn=yes
 
-
 let mapleader=","
-
-" let g:LanguageClient_serverCommands = { 'haskell': ['stack exec -- hie --lsp'] }
-" let g:LanguageClient_rootMarkers = ['*.cabal', 'stack.yaml']
 
 set hidden
