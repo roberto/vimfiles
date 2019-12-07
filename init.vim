@@ -12,6 +12,8 @@ Plug 'tssm/fairyfloss.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 
+Plug 'ElmCast/elm-vim'
+
 " word finder
 Plug 'mileszs/ack.vim', { 'on': 'Ack' }
 
