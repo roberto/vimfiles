@@ -4,8 +4,9 @@ if (has("termguicolors"))
 endif
 
 " Theme
-set background=dark
-colorscheme gruvbox
+" set background=dark
+" colorscheme gruvbox
+colorscheme fairyfloss
 
 " airline
 let g:airline_left_sep= '░'
