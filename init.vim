@@ -20,6 +20,7 @@ Plug 'mileszs/ack.vim', { 'on': 'Ack' }
 " javascript
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'json'] }
 Plug 'maxmellon/vim-jsx-pretty', { 'for': ['javascript'] }
+Plug 'jxnblk/vim-mdx-js'
 
 " complete
 Plug 'Valloric/YouCompleteMe'
@@ -29,7 +30,7 @@ Plug 'editorconfig/editorconfig-vim'
 
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'mdx'] }
 
 " distraction free mode
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
