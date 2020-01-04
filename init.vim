@@ -22,6 +22,9 @@ Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'json'] }
 Plug 'maxmellon/vim-jsx-pretty', { 'for': ['javascript'] }
 Plug 'jxnblk/vim-mdx-js'
 
+" vue
+Plug 'posva/vim-vue'
+
 " complete
 Plug 'Valloric/YouCompleteMe'
 
