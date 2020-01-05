@@ -25,6 +25,9 @@ Plug 'jxnblk/vim-mdx-js'
 " vue
 Plug 'posva/vim-vue'
 
+" html
+Plug 'mattn/emmet-vim'
+
 " complete
 Plug 'Valloric/YouCompleteMe'
 
