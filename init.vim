@@ -28,6 +28,9 @@ Plug 'posva/vim-vue'
 " html
 Plug 'mattn/emmet-vim'
 
+" css
+Plug 'ap/vim-css-color'
+
 " complete
 Plug 'Valloric/YouCompleteMe'
 
