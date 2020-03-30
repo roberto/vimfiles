@@ -7,10 +7,11 @@
 ## NeoVim and its providers
 
 ```sh
-brew install neovim/neovim/neovim python python3
+apt install neovim
 pip install nevovim
 pip3 install nevovim
 gem install nevovim
+npm install -g neovim
 ```
 
 For more: https://github.com/neovim/neovim/wiki/Installing-Neovim#macos--os-x
@@ -28,6 +29,8 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 * `brew install the_silver_searcher` - used by fzf and ack.vim
 * `brew install ripgrep` - used by fzf and ack.vim
+* ymcd
+  * `sudo apt install build-essential cmake python3-dev`
 
 ## Checking setup
 
@@ -51,7 +54,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
   * 'ctrl-p' - previous searching
   * 'ctrl-n' - next searching
 
-## Finding works
+## Finding words
 
 * `:Find something`
 * `:FindAll something`
