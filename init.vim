@@ -17,6 +17,18 @@ Plug 'ElmCast/elm-vim'
 " word finder
 Plug 'mileszs/ack.vim', { 'on': 'Ack' }
 
+" clojure
+Plug 'guns/vim-clojure-static'
+Plug 'tpope/vim-salve'
+Plug 'tpope/vim-projectionist'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'guns/vim-sexp'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'guns/vim-clojure-highlight'
+
 " javascript
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'json'] }
 Plug 'maxmellon/vim-jsx-pretty', { 'for': ['javascript'] }
