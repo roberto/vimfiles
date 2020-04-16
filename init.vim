@@ -12,8 +12,6 @@ Plug 'tssm/fairyfloss.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 
-Plug 'ElmCast/elm-vim'
-
 " word finder
 Plug 'mileszs/ack.vim', { 'on': 'Ack' }
 
@@ -32,21 +30,9 @@ Plug 'guns/vim-clojure-highlight'
 " javascript
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'json'] }
 Plug 'maxmellon/vim-jsx-pretty', { 'for': ['javascript'] }
-Plug 'jxnblk/vim-mdx-js'
-
-" vue
-Plug 'posva/vim-vue'
-
-" html
-Plug 'mattn/emmet-vim'
-
-" css
-Plug 'ap/vim-css-color'
 
 " complete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
-" Plug 'Valloric/YouCompleteMe'
 
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
