@@ -2,11 +2,8 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 " theme
-Plug 'morhetz/gruvbox'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'PierreCapo/voir.vim'
-Plug 'tssm/fairyfloss.vim'
+Plug 'srcery-colors/srcery-vim'
+Plug 'itchyny/lightline.vim'
 
 " fuzzy file finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
@@ -14,32 +11,33 @@ Plug 'junegunn/fzf.vim'
 
 " word finder
 Plug 'mileszs/ack.vim', { 'on': 'Ack' }
+Plug 'justinmk/vim-sneak'
 
 " clojure
-Plug 'guns/vim-clojure-static'
-Plug 'tpope/vim-salve'
-Plug 'tpope/vim-projectionist'
-Plug 'tpope/vim-dispatch'
-Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'guns/vim-sexp'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
-Plug 'guns/vim-clojure-highlight'
-
-" javascript
-Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'json'] }
-Plug 'maxmellon/vim-jsx-pretty', { 'for': ['javascript'] }
+Plug 'Olical/conjure', { 'tag': 'v2.1.2', 'do': 'bin/compile' }
 
 " complete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'ncm2/float-preview.nvim'
 
+" linters
+Plug 'w0rp/ale'
+
+" utils
+Plug 'tpope/vim-commentary'
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-dispatch'
+Plug 'radenling/vim-dispatch-neovim'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-projectionist'
 Plug 'editorconfig/editorconfig-vim'
-
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'npm install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'mdx'] }
+Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
 
 " distraction free mode
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }

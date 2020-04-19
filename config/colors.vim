@@ -4,10 +4,8 @@ if (has("termguicolors"))
 endif
 
 " Theme
-" set background=dark
-" colorscheme gruvbox
-colorscheme fairyfloss
+colorscheme srcery
 
-" airline
-let g:airline_left_sep= '░'
-let g:airline_right_sep= '░'
+let g:lightline = {
+  \ 'colorscheme': 'srcery',
+  \ }
