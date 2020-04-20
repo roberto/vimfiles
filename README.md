@@ -31,6 +31,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 * `brew install ripgrep` - used by fzf and ack.vim
 * ymcd
   * `sudo apt install build-essential cmake python3-dev`
+* `brew install ghq` - used by vim-iced
 
 ## Checking setup
 

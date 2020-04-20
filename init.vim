@@ -13,14 +13,15 @@ Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim', { 'on': 'Ack' }
 Plug 'justinmk/vim-sneak'
 
+" complete
+Plug 'ncm2/float-preview.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " clojure
 Plug 'tpope/vim-sexp-mappings-for-regular-people', {'for': 'clojure'}
 Plug 'guns/vim-sexp', {'for': 'clojure'}
 Plug 'liquidz/vim-iced', {'for': 'clojure'}
-
-" complete
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'ncm2/float-preview.nvim'
+Plug 'liquidz/vim-iced-coc-source', {'for': 'clojure'}
 
 " linters
 Plug 'w0rp/ale'
@@ -86,5 +87,6 @@ set shortmess+=c
 set signcolumn=yes
 
 let mapleader=","
+let maplocalleader=","
 
 set hidden
