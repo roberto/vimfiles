@@ -14,9 +14,9 @@ Plug 'mileszs/ack.vim', { 'on': 'Ack' }
 Plug 'justinmk/vim-sneak'
 
 " clojure
-Plug 'tpope/vim-sexp-mappings-for-regular-people'
-Plug 'guns/vim-sexp'
-Plug 'Olical/conjure', { 'tag': 'v2.1.2', 'do': 'bin/compile' }
+Plug 'tpope/vim-sexp-mappings-for-regular-people', {'for': 'clojure'}
+Plug 'guns/vim-sexp', {'for': 'clojure'}
+Plug 'liquidz/vim-iced', {'for': 'clojure'}
 
 " complete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
