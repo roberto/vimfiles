@@ -16,12 +16,17 @@ Plug 'justinmk/vim-sneak'
 " complete
 Plug 'ncm2/float-preview.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" :CocInstall coc-snippets
+" :CocInstall coc-flutter
 
 " clojure
 Plug 'tpope/vim-sexp-mappings-for-regular-people', {'for': 'clojure'}
 Plug 'guns/vim-sexp', {'for': 'clojure'}
 Plug 'liquidz/vim-iced', {'for': 'clojure'}
 Plug 'liquidz/vim-iced-coc-source', {'for': 'clojure'}
+
+" flutter
+Plug 'dart-lang/dart-vim-plugin'
 
 " linters
 Plug 'w0rp/ale'
@@ -59,6 +64,9 @@ Plug 'christoomey/vim-tmux-navigator'
 " initialize plugin system
 call plug#end()
 
+let mapleader=","
+let maplocalleader=","
+
 " load config files *.vim
 runtime! config/*.vim
 
@@ -87,7 +95,7 @@ set shortmess+=c
 " always show signcolumns
 set signcolumn=yes
 
-let mapleader=","
-let maplocalleader=","
+" backspace mac issue, insert mode
+set backspace=indent,eol,start
 
 set hidden

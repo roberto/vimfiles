@@ -1,9 +1,9 @@
 # Navigation
 
-| Command     | Description                  | Note          |
-| --          | --                           | --            |
-| `\<Enter\>` | open the linked help section | Only on links |
-| `K`         | find documentation           |               |
+| Command   | Description                  | Note          |
+| --        | --                           | --            |
+| `<Enter>` | open the linked help section | Only on links |
+| `K`       | find documentation           |               |
 
 # Editing
 
@@ -56,3 +56,19 @@
 | Command                 | Description                             | Note                    |
 | ----------------------- | --------------------------------------- | ----------------------- |
 | `:saveas %:h/newfile`   | save as `newfile`                       | it works like a reload  |
+
+# dart
+
+| Command                 | Description                             | Note                    |
+| ----------------------- | --------------------------------------- | ----------------------- |
+| `:DartFmt`              | format dart file                        | it works like a reload  |
+
+# CoC
+
+| Command                 | Description                             | Note                    |
+| ----------------------- | --------------------------------------- | ----------------------- |
+| `gd`                    | go to definition                        | it works like a reload  |
+| `gy`                    | go to type definition                   | it works like a reload  |
+| `gi`                    | go to implementation                    | it works like a reload  |
+| `gr`                    | go to references                        | it works like a reload  |
+
