@@ -43,8 +43,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-easy-align'
+Plug 'luochen1990/rainbow'
 
 " distraction free mode
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
