@@ -1,0 +1,210 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+snippet main "Dart main method" b
+void main() {
+	$0
+}
+endsnippet
+
+snippet ident "Anonymous identity method" w
+(${1:_}) => $1
+endsnippet
+
+snippet class "Class outline" b
+class $1 {
+	$0
+}
+endsnippet
+
+snippet di "Dart import" b
+import 'dart:${1:async}';
+endsnippet
+
+snippet im "Import" b
+import 'package:$1/${2:$1}.dart';
+endsnippet
+
+snippet for "For-in loop" b
+for(var $1 in ${2:$1s}) {
+	$0
+}
+endsnippet
+
+snippet fori "indexed for loop" b
+for(int i = 0, ${3:l} = $2.length; i<$3; i++) {
+	var $1 = ${2:$1s}[i];
+	$0
+}
+endsnippet
+
+snippet try "Try/catch block" b
+try {
+	${1:${VISUAL}}
+} catch(${2:e}${3:, st}) {
+	$4
+}
+endsnippet
+
+snippet if "If block" b
+if ($1) {
+	${2:${VISUAL}}
+}
+endsnippet
+
+snippet set "Field setter" b
+set $1($2 $1) {
+	${3:_$1 = $1;}
+}
+endsnippet
+
+snippet get "Simple field getter" b
+$1 get $2 => ${3:_$2};
+endsnippet
+
+snippet gett "Field getter with more logic" b
+$1 get $2 {
+	$3
+}
+endsnippet
+
+snippet getl "Field with lazy initialization" b
+$1 _$2;
+${1} get ${2} => _$2 ?? ${3:_init${2/.*/\u$0/}()};
+endsnippet
+
+snippet aget "Async field getter" b
+Future<$1> get $2 async => ${3:_$2};
+endsnippet
+
+snippet agett "Async field getter with more logic" b
+Future<$1> get $2 async {
+	$3
+}
+endsnippet
+
+snippet gets "Stream field with a controller" b
+Stream<${2:void}> get ${1} => ${3:$4.stream;
+final ${4:_$1} = new StreamController<$2>();}
+endsnippet
+
+snippet m "Anonymous method" w
+($1) {
+	$0
+}
+endsnippet
+
+snippet r "Anonymous single statement return" w
+($1) => $0
+endsnippet
+
+snippet am "Async anonymous method" w
+($1) async {
+	$0
+}
+endsnippet
+
+snippet ar "Async anonymous single statement method" w
+($1) async => $0
+endsnippet
+
+priority 1
+snippet m "Instance or top level method" b
+${1:void} $2($3) {
+	$0
+}
+endsnippet
+
+snippet r "Single statement return" b
+$1 $2($3) => $0;
+endsnippet
+
+snippet am "Async instance or top level method" b
+Future<${1:void}> $2($3) async {
+	$0
+}
+endsnippet
+
+snippet ar "Async single statement return" b
+Future<$1> $2($3) async => $0;
+endsnippet
+
+snippet stless "statelewss widget" b
+class $1 extends StatelessWidget {
+	@override
+	Widget build(BuildContext context) {
+		return Container(
+			$2
+		);
+	}
+}
+endsnippet
+
+snippet stful "stateful widget" b
+class $1 extends StatefulWidget {
+	@override
+	_$1State createState() => _$1State();
+}
+
+class _$1State extends State<$1> {
+	@override
+	Widget build(BuildContext context) {
+		return Container(
+			$2
+		);
+	}
+}
+endsnippet
+
+snippet stanim "widget with animation controller" b
+class $1 extends StatefulWidget {
+	@override
+	_$1State createState() => _$1State();
+}
+
+class _$1State extends State<$1>
+		with SingleTickerProviderStateMixin {
+	AnimationController _controller;
+
+	@override
+	void initState() {
+		super.initState();
+		_controller = AnimationController(vsync: this);
+	}
+
+	@override
+	void dispose() {
+		super.dispose();
+		_controller.dispose();
+	}
+
+	@override
+	Widget build(BuildContext context) {
+		return Container(
+			$2
+		);
+	}
+}
+endsnippet

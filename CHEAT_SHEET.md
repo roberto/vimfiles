@@ -56,6 +56,14 @@
 | Command                 | Description                             | Note                    |
 | ----------------------- | --------------------------------------- | ----------------------- |
 | `:saveas %:h/newfile`   | save as `newfile`                       | it works like a reload  |
+| `:e %:h/otherfile`        | open `otherfile` in the folder        | it works like a reload  |
+
+# FZF
+
+| Command                 | Description                             | Note                    | Custom |
+| ----------------------- | --------------------------------------- | ----------------------- | -----  |
+| `<C-p>`                 | fuzzy finder files panel                |                         | yes    |
+| `<C-b>`                 | fuzzy finder buffers panel              |                         | yes    |
 
 # dart
 

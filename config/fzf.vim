@@ -30,3 +30,5 @@ endif
 " map ctrl-p
 nnoremap <silent> <C-p> :FZF -m<cr>
 
+" map ctrl-p
+nnoremap <silent> <C-b> :Buffers<cr>

@@ -1,5 +1,4 @@
 {
-  "coc.source.iced.enable": true,
   "languageserver": {
     "clojure-lsp": {
       "command": "bash",
@@ -11,5 +10,7 @@
       "initializationOptions": {
       }
     }
-  }
+  },
+  "flutter.provider.hot-reload": true,
+  "diagnostic.warningSign": ">>"
 }

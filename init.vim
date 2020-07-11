@@ -2,8 +2,16 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 " theme
-Plug 'srcery-colors/srcery-vim'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'itchyny/lightline.vim'
+
+" typescript
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+
+" tree
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " fuzzy file finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
@@ -11,19 +19,15 @@ Plug 'junegunn/fzf.vim'
 
 " word finder
 Plug 'mileszs/ack.vim', { 'on': 'Ack' }
-Plug 'justinmk/vim-sneak'
 
 " complete
 Plug 'ncm2/float-preview.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" :CocInstall coc-snippets
-" :CocInstall coc-flutter
 
 " clojure
 Plug 'tpope/vim-sexp-mappings-for-regular-people', {'for': 'clojure'}
 Plug 'guns/vim-sexp', {'for': 'clojure'}
-Plug 'liquidz/vim-iced', {'for': 'clojure'}
-Plug 'liquidz/vim-iced-coc-source', {'for': 'clojure'}
+Plug 'Olical/conjure', {'tag': 'v3.0.0'}
 
 " flutter
 Plug 'dart-lang/dart-vim-plugin'
@@ -46,6 +50,8 @@ Plug 'tpope/vim-surround'
 Plug 'junegunn/vim-easy-align'
 Plug 'luochen1990/rainbow'
 
+Plug 'nathanaelkane/vim-indent-guides'
+
 " distraction free mode
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'junegunn/limelight.vim', { 'on': 'Goyo' }
@@ -66,6 +72,10 @@ call plug#end()
 
 let mapleader=","
 let maplocalleader=","
+
+" j/k will move virtual lines (lines that wrap)
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
 " load config files *.vim
 runtime! config/*.vim
@@ -93,7 +103,7 @@ set updatetime=300
 set shortmess+=c
 
 " always show signcolumns
-set signcolumn=yes
+" set signcolumn=yes
 
 " backspace mac issue, insert mode
 set backspace=indent,eol,start

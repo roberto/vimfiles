@@ -3,9 +3,11 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
+set background=light
 " Theme
-colorscheme srcery
+colorscheme PaperColor
 
 let g:lightline = {
-  \ 'colorscheme': 'srcery',
+  \ 'colorscheme': 'PaperColor',
   \ }
+set noshowmode
