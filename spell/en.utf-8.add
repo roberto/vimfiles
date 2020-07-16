@@ -7,3 +7,6 @@ vim
 Plugin
 charset
 TODO
+Clojure
+sexp
+tpope

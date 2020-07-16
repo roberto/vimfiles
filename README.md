@@ -4,17 +4,24 @@
 
 `git clone git@github.com:roberto/vimfiles.git ~/.config/nvim`
 
-## NeoVim and its providers
+## Neovim
 
 ```sh
+brew install neovim
+# or
 apt install neovim
+```
+
+For more: https://github.com/neovim/neovim/wiki/Installing-Neovim#macos--os-x
+
+### Neovim providers
+
+```sh
 pip install nevovim
 pip3 install nevovim
 gem install nevovim
 npm install -g neovim
 ```
-
-For more: https://github.com/neovim/neovim/wiki/Installing-Neovim#macos--os-x
 
 ## Plugins Manager: vim-plug
 
@@ -25,13 +32,12 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 `:PluginInstall`
 
-## Plugin Dependencies
+## External Dependencies
 
 * `brew install the_silver_searcher` - used by fzf and ack.vim
 * `brew install ripgrep` - used by fzf and ack.vim
-* ymcd
-  * `sudo apt install build-essential cmake python3-dev`
-* `brew install ghq` - used by vim-iced
+* `brew install --HEAD universal-ctags/universal-ctags/universal-ctags` \
+   https://github.com/universal-ctags/homebrew-universal-ctags
 
 ## Checking setup
 
@@ -61,7 +67,8 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 * `:FindAll something`
   * same commands used after 'ctrl-p'
 
-* `:Ack something` - search for something
+* `:Ack something` - searching for something
+* `:Tags` - searching using ctags
 
 ```
 ?    a quick summary of these keys, repeat to close
