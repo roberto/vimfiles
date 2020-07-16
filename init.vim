@@ -27,7 +27,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " clojure
 Plug 'tpope/vim-sexp-mappings-for-regular-people', {'for': 'clojure'}
 Plug 'guns/vim-sexp', {'for': 'clojure'}
-Plug 'Olical/conjure', {'tag': 'v3.0.0'}
+Plug 'Olical/conjure', {'tag': 'v4.1.0'}
 
 " rust
 Plug 'rust-lang/rust.vim'
