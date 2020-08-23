@@ -6,8 +6,3 @@ endif
 set background=dark
 " Theme
 colorscheme PaperColor
-
-let g:lightline = {
-  \ 'colorscheme': 'PaperColor',
-  \ }
-set noshowmode
