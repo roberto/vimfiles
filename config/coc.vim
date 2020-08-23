@@ -1,5 +1,5 @@
 " plugins
-let g:coc_global_extensions = ['coc-conjure-olical', 'coc-flutter', 'coc-snippets', 'coc-rls']
+let g:coc_global_extensions = ['coc-conjure-olical', 'coc-flutter', 'coc-snippets', 'coc-rust-analyzer']
 
 " rust dependencies
 " rustup component add rls rust-analysis rust-src
