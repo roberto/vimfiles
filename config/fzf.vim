@@ -30,5 +30,10 @@ endif
 " map ctrl-p
 nnoremap <silent> <C-p> :FZF -m<cr>
 
-" map ctrl-p
+" map ctrl-b to buffers
 nnoremap <silent> <C-b> :Buffers<cr>
+
+" map ctrl-t to tags
+nmap <leader>t :Tags<cr>
+nnoremap <silent> <C-t> :Tags<cr>
+
