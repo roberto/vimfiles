@@ -4,6 +4,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 " theme
 Plug 'NLKNguyen/papercolor-theme'
 
+" LSP
+Plug 'm00qek/nvim-lsp' "waiting until neovim/nvim-lsp merges PR #305
+
 " clojure
 Plug 'tpope/vim-sexp-mappings-for-regular-people', {'for': 'clojure'}
 Plug 'guns/vim-sexp', {'for': 'clojure'}
