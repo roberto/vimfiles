@@ -7,6 +7,9 @@ Plug 'NLKNguyen/papercolor-theme'
 " coc.nvim
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" tests
+Plug 'roberto/vim-test', {'branch': 'dart-flutter'} " https://github.com/vim-test/vim-test/pull/511
+
 " clojure
 Plug 'tpope/vim-sexp-mappings-for-regular-people', {'for': 'clojure'}
 Plug 'guns/vim-sexp', {'for': 'clojure'}
