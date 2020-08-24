@@ -6,7 +6,7 @@ Plug 'NLKNguyen/papercolor-theme'
 
 " LSP
 Plug 'm00qek/nvim-lsp' "waiting until neovim/nvim-lsp merges PR #305
-Plug 'nvim-lua/diagnostic-nvim' " better diagnostics
+Plug 'nvim-lua/diagnostic-nvim' " better diagnostics xp
 
 " clojure
 Plug 'tpope/vim-sexp-mappings-for-regular-people', {'for': 'clojure'}
