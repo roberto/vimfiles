@@ -4,6 +4,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 " theme
 Plug 'NLKNguyen/papercolor-theme'
 
+" coc.nvim
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " clojure
 Plug 'tpope/vim-sexp-mappings-for-regular-people', {'for': 'clojure'}
 Plug 'guns/vim-sexp', {'for': 'clojure'}
