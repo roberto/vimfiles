@@ -4,6 +4,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 " theme
 Plug 'NLKNguyen/papercolor-theme'
 
+" finder
+Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
+
 " coc.nvim
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
