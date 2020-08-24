@@ -6,6 +6,7 @@ Plug 'NLKNguyen/papercolor-theme'
 
 " LSP
 Plug 'm00qek/nvim-lsp' "waiting until neovim/nvim-lsp merges PR #305
+Plug 'nvim-lua/diagnostic-nvim' " better diagnostics
 
 " clojure
 Plug 'tpope/vim-sexp-mappings-for-regular-people', {'for': 'clojure'}
@@ -51,6 +52,7 @@ set nu
 set nobackup
 set nowritebackup
 set noswapfile
+
 " 80 chars ruler
 set cc=80
 
@@ -62,6 +64,9 @@ set updatetime=300
 
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
+
+" always show signcolumns
+set signcolumn=yes
 
 " hide files instead of close them
 set hidden
