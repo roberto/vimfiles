@@ -31,8 +31,11 @@ nmap <leader>a  <Plug>(coc-codeaction-selected)
 
 " Remap keys for applying codeAction to the current buffer.
 nmap <leader>ac  <Plug>(coc-codeaction)
+
 " Apply AutoFix to problem on the current line.
-nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <leader>ef  <Plug>(coc-fix-current)
+" list errors
+nnoremap <silent> <leader>el  :<C-u>CocDiagnostics<CR>
 
 "format buffer
 nmap <leader>fb  <Plug>(coc-format)

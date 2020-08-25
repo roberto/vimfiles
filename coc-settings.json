@@ -1,5 +1,9 @@
 {
   "coc.preferences.formatOnSaveFiletypes": [
     "dart"
-  ]
+  ],
+  "diagnostic.warningSign": "\uf071",
+  "diagnostic.infoSign": "\uf834",
+  "diagnostic.errorSign": "\uf7ed",
+  "diagnostic.hintSign": "\uf5bf"
 }
