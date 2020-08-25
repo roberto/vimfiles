@@ -4,6 +4,12 @@ call plug#begin('~/.local/share/nvim/plugged')
 " theme
 Plug 'NLKNguyen/papercolor-theme'
 
+" status/tabline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
+Plug 'edkolev/tmuxline.vim'
+
 " finder
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 
