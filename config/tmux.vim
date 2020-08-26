@@ -23,3 +23,11 @@ endif
 " bind-key j if-shell "$is_vim" "send-keys C-a C-j"  "select-pane -D"
 " bind-key k if-shell "$is_vim" "send-keys C-a C-k"  "select-pane -U"
 " bind-key l if-shell "$is_vim" "send-keys C-a C-l"  "select-pane -R"
+
+" minimalist, only with windows
+let g:tmuxline_powerline_separators = 0
+let g:tmuxline_preset = {
+      \'win'  : '#I #W',
+      \'cwin' : '#I #W',
+      \'options': {'status-justify': 'left'}
+      \}
