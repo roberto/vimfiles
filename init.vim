@@ -10,6 +10,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'edkolev/tmuxline.vim'
 
+" windows
+Plug 'wesQ3/vim-windowswap'
+
 " finder
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 
