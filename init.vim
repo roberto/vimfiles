@@ -12,6 +12,7 @@ Plug 'edkolev/tmuxline.vim'
 
 " windows
 Plug 'wesQ3/vim-windowswap'
+Plug 'mhinz/vim-sayonara' " delete buffer and preserves current window
 
 " finder
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
