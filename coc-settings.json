@@ -5,5 +5,18 @@
   "diagnostic.warningSign": "\uf071",
   "diagnostic.infoSign": "\uf834",
   "diagnostic.errorSign": "\uf7ed",
-  "diagnostic.hintSign": "\uf5bf"
+  "diagnostic.hintSign": "\uf5bf",
+  "flutter.provider.hot-reload": true,
+  "languageserver": {
+    "clojure-lsp": {
+      "command": "bash",
+      "args": ["-c", "clojure-lsp"],
+      "filetypes": ["clojure"],
+      "rootPatterns": ["project.clj"],
+      "additionalSchemes": ["jar", "zipfile"],
+      "trace.server": "verbose",
+      "initializationOptions": {
+      }
+    }
+  }
 }

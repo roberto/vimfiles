@@ -1,4 +1,4 @@
-let g:coc_global_extensions = ['coc-flutter', 'coc-snippets', 'coc-json']
+let g:coc_global_extensions = ['coc-flutter', 'coc-snippets', 'coc-json', 'coc-conjure']
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)

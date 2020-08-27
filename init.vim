@@ -24,9 +24,18 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'roberto/vim-test', {'branch': 'dart-flutter'} " https://github.com/vim-test/vim-test/pull/511
 
 " clojure
+Plug 'Olical/conjure', { 'tag' : 'v4.3.1', 'for' : 'clojure' }
+Plug 'clojure-vim/vim-jack-in', { 'for' : 'clojure' }
+Plug 'tpope/vim-dispatch', { 'for' : 'clojure' }
+Plug 'radenling/vim-dispatch-neovim', { 'for' : 'clojure' }
+
+" parens everywhere
+Plug 'luochen1990/rainbow', { 'for' : 'clojure' }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', {'for': 'clojure'}
 Plug 'guns/vim-sexp', {'for': 'clojure'}
-Plug 'luochen1990/rainbow'
+Plug 'eraserhd/parinfer-rust', {'do':
+        \  'cargo build --release', 'for': 'clojure'}
+Plug 'guns/vim-clojure-static', { 'for' : 'clojure' }
 
 " rust
 Plug 'rust-lang/rust.vim'
