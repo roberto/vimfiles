@@ -1,4 +1,12 @@
 {
+  "coc.preferences.formatOnSaveFiletypes": [
+    "dart"
+  ],
+  "diagnostic.warningSign": "\uf071",
+  "diagnostic.infoSign": "\uf834",
+  "diagnostic.errorSign": "\uf7ed",
+  "diagnostic.hintSign": "\uf5bf",
+  "flutter.provider.hot-reload": true,
   "languageserver": {
     "clojure-lsp": {
       "command": "bash",
@@ -10,7 +18,5 @@
       "initializationOptions": {
       }
     }
-  },
-  "flutter.provider.hot-reload": true,
-  "diagnostic.warningSign": ">>"
+  }
 }

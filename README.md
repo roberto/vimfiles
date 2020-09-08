@@ -34,8 +34,6 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 ## External Dependencies
 
-* `brew install the_silver_searcher` - used by fzf and ack.vim
-* `brew install ripgrep` - used by fzf and ack.vim
 * `brew install --HEAD universal-ctags/universal-ctags/universal-ctags` \
    https://github.com/universal-ctags/homebrew-universal-ctags
 
@@ -45,44 +43,6 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 `:PlugStatus`
 
 # Commands and key bindings
-
-## Searching
-
-* `noh` - cancel last search highlighting: `:noh`
-* `set nohlsearch` - turn off search highlighting
-* `set hlsearch!` - toggle search highlighting
-
-## Finding Files
-
-* 'ctrl-p' - opens file finder
-  * 'ctrl-t' - tab split
-  * 'ctrl-x' - split
-  * 'ctrl-v' - vsplit
-  * 'ctrl-p' - previous searching
-  * 'ctrl-n' - next searching
-
-## Finding words
-
-* `:Find something`
-* `:FindAll something`
-  * same commands used after 'ctrl-p'
-
-* `:Ack something` - searching for something
-* `:Tags` - searching using ctags
-
-```
-?    a quick summary of these keys, repeat to close
-o    to open (same as Enter)
-O    to open and close the quickfix window
-go   to preview file, keeping focus on the results
-t    to open in new tab
-T    to open in new tab, keeping focus on the results
-h    to open in horizontal split
-H    to open in horizontal split, keeping focus on the results
-v    to open in vertical split
-gv   to open in vertical split, keeping focus on the results
-q    to close the quickfix window
-```
 
 ## Errors
 
@@ -94,10 +54,6 @@ q    to close the quickfix window
 
 * `file -I [file, dir or *]` - charset of a file
 * https://github.com/jedmao/eclint - generates .editorconfig
-
-##  Distraction Free Mode
-
-* `:Goyo` - toggle it
 
 ## Spell
 

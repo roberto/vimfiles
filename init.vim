@@ -3,31 +3,39 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " theme
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'itchyny/lightline.vim'
 
-" typescript
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
+" status/tabline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
+Plug 'edkolev/tmuxline.vim'
 
-" tree
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+" windows
+Plug 'wesQ3/vim-windowswap'
+Plug 'mhinz/vim-sayonara' " delete buffer and preserves current window
 
-" fuzzy file finder
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
-Plug 'junegunn/fzf.vim'
+" finder
+Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 
-" word finder
-Plug 'mileszs/ack.vim', { 'on': 'Ack' }
-
-" complete
-Plug 'ncm2/float-preview.nvim'
+" coc.nvim
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" tests
+Plug 'roberto/vim-test', {'branch': 'dart-flutter'} " https://github.com/vim-test/vim-test/pull/511
+
 " clojure
+Plug 'Olical/conjure', { 'tag' : 'v4.3.1', 'for' : 'clojure' }
+Plug 'clojure-vim/vim-jack-in', { 'for' : 'clojure' }
+Plug 'tpope/vim-dispatch', { 'for' : 'clojure' }
+Plug 'radenling/vim-dispatch-neovim', { 'for' : 'clojure' }
+
+" parens everywhere
+Plug 'luochen1990/rainbow', { 'for' : 'clojure' }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', {'for': 'clojure'}
 Plug 'guns/vim-sexp', {'for': 'clojure'}
-Plug 'Olical/conjure', {'tag': 'v4.1.0'}
+Plug 'eraserhd/parinfer-rust', {'do':
+        \  'cargo build --release', 'for': 'clojure'}
+Plug 'guns/vim-clojure-static', { 'for' : 'clojure' }
 
 " rust
 Plug 'rust-lang/rust.vim'
@@ -35,44 +43,19 @@ Plug 'rust-lang/rust.vim'
 " flutter
 Plug 'dart-lang/dart-vim-plugin'
 
-" linters
-Plug 'w0rp/ale'
-
 " utils
-Plug 'tpope/vim-commentary'
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-dispatch'
-Plug 'radenling/vim-dispatch-neovim'
-Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-projectionist'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'tpope/vim-sleuth'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
-Plug 'junegunn/vim-easy-align'
-Plug 'luochen1990/rainbow'
-
+Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
 
-" distraction free mode
-Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
-Plug 'junegunn/limelight.vim', { 'on': 'Goyo' }
-
-" markdown preview
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install' }
-
-" plantuml
-Plug 'tyru/open-browser.vim'
-Plug 'aklt/plantuml-syntax'
-Plug 'weirongxu/plantuml-previewer.vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
 
 " tmux
 Plug 'christoomey/vim-tmux-navigator'
 
 " initialize plugin system
 call plug#end()
-
 let mapleader=","
 let maplocalleader=","
 
@@ -83,6 +66,8 @@ noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 " load config files *.vim
 runtime! config/*.vim
 
+" https://neovim.io/doc/user/options.html
+
 " line numbers
 set nu
 
@@ -90,11 +75,9 @@ set nu
 set nobackup
 set nowritebackup
 set noswapfile
+
 " 80 chars ruler
 set cc=80
-
-" ; working as :
-nnoremap ; :
 
 " better for messages
 set cmdheight=2
@@ -105,10 +88,11 @@ set updatetime=300
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
 
+" highlight current line
+set cursorline
+
 " always show signcolumns
-" set signcolumn=yes
+set signcolumn=yes
 
-" backspace mac issue, insert mode
-set backspace=indent,eol,start
-
+" hide files instead of close them
 set hidden
