@@ -77,7 +77,8 @@ set nowritebackup
 set noswapfile
 
 " 80 chars ruler
-set cc=80
+" set cc=80
+set nocursorcolumn
 
 " better for messages
 set cmdheight=2
