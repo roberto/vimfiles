@@ -68,32 +68,22 @@ runtime! config/*.vim
 
 " https://neovim.io/doc/user/options.html
 
-" line numbers
-set nu
-
 " no backup
 set nobackup
 set nowritebackup
 set noswapfile
 
-" 80 chars ruler
-" set cc=80
-set nocursorcolumn
+set hidden              " hide files instead of close them
 
-" better for messages
-set cmdheight=2
+set colorcolumn=0       " 80 chars ruler
+set cursorline          " highlight current line
+set nocursorcolumn      " no highlight current column
+set scrolloff=3         " start scrolling 3 lines before
 
-" smaller updatetime for CursorHold
-set updatetime=300
+set nu                  " line numbers
+set signcolumn=yes      " always show signcolumns
 
-" don't give |ins-completion-menu| messages.
-set shortmess+=c
+set cmdheight=2         " better for messages
+set updatetime=300      " smaller updatetime for CursorHold
+set shortmess+=c        " don't give ins-completion-menu messages
 
-" highlight current line
-set cursorline
-
-" always show signcolumns
-set signcolumn=yes
-
-" hide files instead of close them
-set hidden
