@@ -21,7 +21,7 @@ Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " tests
-Plug 'roberto/vim-test', {'branch': 'dart-flutter'} " https://github.com/vim-test/vim-test/pull/511
+Plug 'vim-test/vim-test'
 
 " clojure
 Plug 'Olical/conjure', { 'tag' : 'v4.3.1', 'for' : 'clojure' }
