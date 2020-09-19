@@ -18,24 +18,28 @@ Plug 'mhinz/vim-sayonara' " delete buffer and preserves current window
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 
 " coc.nvim
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 " tests
-Plug 'vim-test/vim-test'
+Plug 'vim-test/vim-test', { 'for': 'dart' }
+
+" fennel
+Plug 'Olical/aniseed', { 'tag': 'v3.6.2', 'for': 'fennel' }
+Plug 'bakpakin/fennel.vim', { 'for': 'fennel' }
 
 " clojure
-Plug 'Olical/conjure', { 'tag' : 'v4.3.1', 'for' : 'clojure' }
-Plug 'clojure-vim/vim-jack-in', { 'for' : 'clojure' }
-Plug 'tpope/vim-dispatch', { 'for' : 'clojure' }
-Plug 'radenling/vim-dispatch-neovim', { 'for' : 'clojure' }
+Plug 'Olical/conjure', { 'for': ['clojure' , 'fennel'] }
+Plug 'clojure-vim/vim-jack-in', { 'for': 'clojure' }
+Plug 'tpope/vim-dispatch'
+Plug 'radenling/vim-dispatch-neovim'
 
 " parens everywhere
-Plug 'luochen1990/rainbow', { 'for' : 'clojure' }
-Plug 'tpope/vim-sexp-mappings-for-regular-people', {'for': 'clojure'}
-Plug 'guns/vim-sexp', {'for': 'clojure'}
+Plug 'luochen1990/rainbow', { 'for': ['clojure' , 'fennel'] }
+Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': ['clojure' , 'fennel'] }
+Plug 'guns/vim-sexp', { 'for': ['clojure' , 'fennel'] }
 Plug 'eraserhd/parinfer-rust', {'do':
-        \  'cargo build --release', 'for': 'clojure'}
-Plug 'guns/vim-clojure-static', { 'for' : 'clojure' }
+        \  'cargo build --release', 'for': ['clojure' , 'fennel'] }
+Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
 
 " rust
 Plug 'rust-lang/rust.vim'
