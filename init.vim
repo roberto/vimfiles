@@ -47,6 +47,7 @@ Plug 'dart-lang/dart-vim-plugin'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'} " multi cursor
 
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
