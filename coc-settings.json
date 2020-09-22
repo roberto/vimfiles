@@ -1,4 +1,5 @@
 {
+  "snippets.ultisnips.directories": ["ultisnips", "custom-snips"],
   "coc.preferences.formatOnSaveFiletypes": [
     "dart"
   ],

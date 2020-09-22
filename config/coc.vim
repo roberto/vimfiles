@@ -5,6 +5,8 @@ let g:coc_global_extensions = [
   \'coc-conjure',
   \'coc-actions']
 
+let g:coc_snippet_next = '<tab>'
+
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
