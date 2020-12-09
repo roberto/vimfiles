@@ -17,6 +17,7 @@
       "additionalSchemes": ["jar", "zipfile"],
       "trace.server": "verbose",
       "initializationOptions": {
+        "ignore-classpath-directories": true
       }
     }
   }
