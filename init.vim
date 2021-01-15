@@ -14,11 +14,17 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'wesQ3/vim-windowswap'
 Plug 'mhinz/vim-sayonara' " delete buffer and preserves current window
 
+" markdown
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
 " finder
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 
 " coc.nvim
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+
+" git
+Plug 'tpope/vim-fugitive'
 
 " tests
 Plug 'vim-test/vim-test', { 'for': 'dart' }
