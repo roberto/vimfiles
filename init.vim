@@ -96,6 +96,10 @@ set scrolloff=3         " start scrolling 3 lines before
 set nu                  " line numbers
 set signcolumn=yes      " always show signcolumns
 
+" spell checking
+autocmd FileType markdown setlocal spell spelllang=en_us
+autocmd FileType gitcommit setlocal spell spelllang=en_us
+
 set cmdheight=2         " better for messages
 set updatetime=300      " smaller updatetime for CursorHold
 set shortmess+=c        " don't give ins-completion-menu messages
