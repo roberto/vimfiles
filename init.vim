@@ -27,7 +27,7 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'tpope/vim-fugitive'
 
 " tests
-Plug 'vim-test/vim-test', { 'for': 'dart' }
+Plug 'vim-test/vim-test', { 'for': ['dart', 'elixir'] }
 
 " fennel
 Plug 'Olical/aniseed', { 'tag': 'v3.6.2', 'for': 'fennel' }
@@ -53,6 +53,10 @@ Plug 'rust-lang/rust.vim'
 
 " flutter
 Plug 'dart-lang/dart-vim-plugin'
+
+" elixir
+Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
+Plug 'elixir-editors/vim-elixir'
 
 " utils
 Plug 'editorconfig/editorconfig-vim'

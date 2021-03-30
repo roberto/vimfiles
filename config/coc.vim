@@ -3,7 +3,8 @@ let g:coc_global_extensions = [
   \'coc-snippets',
   \'coc-json',
   \'coc-conjure',
-  \'coc-actions']
+  \'coc-actions',
+  \'coc-elixir']
 
 let g:coc_snippet_next = '<tab>'
 
@@ -59,6 +60,8 @@ xmap <leader>fs  <Plug>(coc-format-selected)
 
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR   :call CocAction('runCommand', 'editor.action.organizeImport')
+
+nnoremap <silent> <leader>co  :<C-u>CocList outline<CR>
 
 " to navigate with tab
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
