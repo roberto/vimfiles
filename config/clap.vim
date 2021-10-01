@@ -22,3 +22,6 @@ let g:clap_theme = 'solarized_dark'
 
 " no border
 let g:clap_search_box_border_style = 'nil'
+
+" preview delay
+let g:clap_preview_delay = 200
