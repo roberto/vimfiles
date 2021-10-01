@@ -39,10 +39,10 @@ Plug 'vim-test/vim-test', { 'for': ['dart', 'elixir'] }
 " fennel
 Plug 'Olical/aniseed', { 'tag': 'v3.6.2', 'for': 'fennel' }
 Plug 'bakpakin/fennel.vim', { 'for': 'fennel' }
-Plug 'Olical/AnsiEsc'
+Plug 'm00qek/baleia.nvim', { 'tag': 'v1.0.1' }
 
 " clojure
-Plug 'Olical/conjure', {'tag': 'v4.10.0', 'for': ['clojure' , 'fennel']}
+Plug 'Olical/conjure', {'tag': 'v4.22.1', 'for': ['clojure' , 'fennel']}
 Plug 'clojure-vim/vim-jack-in', { 'for': 'clojure' }
 Plug 'tpope/vim-dispatch'
 Plug 'radenling/vim-dispatch-neovim'
@@ -118,6 +118,3 @@ autocmd FileType gitcommit setlocal spell spelllang=en_us
 set cmdheight=2         " better for messages
 set updatetime=300      " smaller updatetime for CursorHold
 set shortmess+=c        " don't give ins-completion-menu messages
-
-let g:conjure#log#strip_ansi_escape_sequences_line_limit=0
-" autocmd BufEnter conjure-log-* AnsiEsc
