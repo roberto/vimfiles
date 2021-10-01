@@ -10,6 +10,10 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'edkolev/tmuxline.vim'
 
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+Plug 'google/vim-glaive'
+
 " windows
 Plug 'wesQ3/vim-windowswap'
 Plug 'mhinz/vim-sayonara' " delete buffer and preserves current window
@@ -75,6 +79,10 @@ Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 let mapleader=","
 let maplocalleader=","
+
+call glaive#Install()
+" Optional: Enable codefmt's default mappings on the <Leader>= prefix.
+Glaive codefmt plugin[mappings]
 
 " j/k will move virtual lines (lines that wrap)
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
