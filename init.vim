@@ -14,6 +14,9 @@ Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
 
+" directory
+Plug 'lambdalisue/fern.vim'
+
 " windows
 Plug 'wesQ3/vim-windowswap'
 Plug 'mhinz/vim-sayonara' " delete buffer and preserves current window
