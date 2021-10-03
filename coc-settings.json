@@ -1,7 +1,17 @@
 {
   "snippets.ultisnips.directories": ["ultisnips", "custom-snips"],
+  "tsserver.formatOnType": true,
+  "coc.preferences.formatOnType": true,
+  "prettier.disableSuccessMessage": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.filetypes": ["javascript", "javascriptreact", "typescript",
+    "typescriptreact"],
   "coc.preferences.formatOnSaveFiletypes": [
-    "dart"
+    "dart",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
   ],
   "diagnostic.warningSign": "\uf071",
   "diagnostic.infoSign": "\uf834",

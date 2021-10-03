@@ -65,6 +65,15 @@ Plug 'dart-lang/dart-vim-plugin'
 Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
 Plug 'elixir-editors/vim-elixir'
 
+" js
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+
+" graphql
+Plug 'jparise/vim-graphql'
+
 " utils
 Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'

@@ -4,7 +4,17 @@ let g:coc_global_extensions = [
   \'coc-json',
   \'coc-conjure',
   \'coc-actions',
-  \'coc-elixir']
+  \'coc-elixir',
+  \'coc-tsserver']
+
+
+if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
+  let g:coc_global_extensions += ['coc-prettier']
+endif
+
+if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
+  let g:coc_global_extensions += ['coc-eslint']
+endif
 
 let g:coc_snippet_next = '<tab>'
 
