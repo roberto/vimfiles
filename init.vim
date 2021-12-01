@@ -17,6 +17,10 @@ Plug 'google/vim-glaive'
 " directory
 Plug 'lambdalisue/fern.vim'
 
+" lsp
+Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/nvim-lsp-installer'
+
 " windows
 Plug 'wesQ3/vim-windowswap'
 Plug 'mhinz/vim-sayonara' " delete buffer and preserves current window
