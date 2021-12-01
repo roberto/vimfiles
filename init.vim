@@ -21,14 +21,8 @@ Plug 'lambdalisue/fern.vim'
 Plug 'wesQ3/vim-windowswap'
 Plug 'mhinz/vim-sayonara' " delete buffer and preserves current window
 
-" markdown
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-
 " finder
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
-
-" coc.nvim
-Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 " git
 Plug 'tpope/vim-fugitive'
@@ -36,16 +30,12 @@ Plug 'tpope/vim-fugitive'
 " tests
 Plug 'vim-test/vim-test', { 'for': ['dart', 'elixir'] }
 
-" fennel
-Plug 'Olical/aniseed', { 'tag': 'v3.6.2', 'for': 'fennel' }
-Plug 'bakpakin/fennel.vim', { 'for': 'fennel' }
-Plug 'm00qek/baleia.nvim', { 'tag': 'v1.0.1' }
-
 " clojure
 Plug 'Olical/conjure', {'tag': 'v4.22.1', 'for': ['clojure' , 'fennel']}
 Plug 'clojure-vim/vim-jack-in', { 'for': 'clojure' }
 Plug 'tpope/vim-dispatch'
 Plug 'radenling/vim-dispatch-neovim'
+Plug 'm00qek/baleia.nvim', { 'tag': 'v1.1.0' }
 
 " parens everywhere
 Plug 'luochen1990/rainbow', { 'for': ['clojure' , 'fennel'] }
@@ -60,16 +50,6 @@ Plug 'rust-lang/rust.vim'
 
 " flutter
 Plug 'dart-lang/dart-vim-plugin'
-
-" elixir
-Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
-Plug 'elixir-editors/vim-elixir'
-
-" js
-Plug 'pangloss/vim-javascript'
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 " graphql
 Plug 'jparise/vim-graphql'
@@ -87,10 +67,8 @@ Plug 'tpope/vim-surround'
 " tmux
 Plug 'christoomey/vim-tmux-navigator'
 
-
-Plug 'tyru/open-browser.vim'
+" plantuml
 Plug 'aklt/plantuml-syntax'
-Plug 'weirongxu/plantuml-previewer.vim'
 
 " initialize plugin system
 call plug#end()
