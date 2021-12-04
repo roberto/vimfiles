@@ -3,6 +3,18 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " theme
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'EdenEast/nightfox.nvim'
+Plug 'shaunsingh/solarized.nvim'
+
+" comp
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+
+Plug 'SirVer/ultisnips'
+Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
 " status/tabline
 Plug 'vim-airline/vim-airline'
@@ -21,6 +33,9 @@ Plug 'lambdalisue/fern.vim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
 
+" better syntax highlight
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 " windows
 Plug 'wesQ3/vim-windowswap'
 Plug 'mhinz/vim-sayonara' " delete buffer and preserves current window
@@ -35,7 +50,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-test/vim-test', { 'for': ['dart', 'elixir'] }
 
 " clojure
-Plug 'Olical/conjure', {'tag': 'v4.22.1', 'for': ['clojure' , 'fennel']}
+Plug 'Olical/conjure', {'for': ['clojure' , 'fennel']}
 Plug 'clojure-vim/vim-jack-in', { 'for': 'clojure' }
 Plug 'tpope/vim-dispatch'
 Plug 'radenling/vim-dispatch-neovim'
@@ -102,10 +117,13 @@ set hidden              " hide files instead of close them
 set colorcolumn=0       " 80 chars ruler
 set cursorline          " highlight current line
 set nocursorcolumn      " no highlight current column
-set scrolloff=3         " start scrolling 3 lines before
+set scrolloff=4         " start scrolling 3 lines before
 
 set nu                  " line numbers
 set signcolumn=yes      " always show signcolumns
+
+" comp
+set completeopt=menu,menuone,noselect
 
 " spell checking
 autocmd FileType markdown setlocal spell spelllang=en_us

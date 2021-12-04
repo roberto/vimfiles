@@ -17,9 +17,6 @@ let g:clap_project_root_markers = [
 " centered
 let g:clap_layout = { 'relative': 'editor' }
 
-" theme
-let g:clap_theme = 'solarized_dark'
-
 " no border
 let g:clap_search_box_border_style = 'nil'
 
