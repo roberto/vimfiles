@@ -25,3 +25,11 @@ visual mode -> `A-(hjkl)`
 ### Resize windows
 
 `A-(hjkl)`
+
+### Open link under cursor
+
+`gx`
+
+### Listing changed files and opened buffers
+
+Browsing on neo-tree with `<` and `>`
