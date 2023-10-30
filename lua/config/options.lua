@@ -3,3 +3,6 @@
 -- Add any additional options here
 
 vim.opt.relativenumber = false
+
+-- execute folder .nvimrc
+vim.o.exrc = true
