@@ -23,10 +23,11 @@ local opts = {
 	},
 	rtp = {
 		disabled_plugins = {
+			"netrw", -- disabled to use nvim-tree
+			"netrwPlugin", -- disabled to use nvim-tree
 			"gzip",
 			"matchit",
 			"matchparen",
-			"netrwPlugin",
 			"tarPlugin",
 			"tohtml",
 			"tutor",
