@@ -21,6 +21,7 @@ local config = function()
 			live_grep = {
 				theme = "dropdown",
 				previewer = true,
+				hidden = false,
 			},
 			buffers = {
 				theme = "dropdown",
@@ -58,6 +59,7 @@ return {
 		mapkey("<leader><leader>", "Telescope git_files show_untracked=true", {desc = "Files"}),
 		mapkey("<leader>ff", "Telescope find_files", {desc = "All files"}),
 		mapkey("<leader>fg", "Telescope live_grep", {desc = "Grep"}),
+		mapkey("<leader>/", "Telescope live_grep", {desc = "Grep"}),
 		mapkey("<leader>fw", "Telescope grep_string", {desc = "Word"}),
 		mapkey("<leader>fb", "Telescope buffers", {desc = "Open buffer"}),
 		mapkey("<leader>fr", "Telescope resume", {desc = "Resume"}),
