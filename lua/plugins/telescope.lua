@@ -11,6 +11,11 @@ local config = function()
 				previewer = false,
 				hidden = true,
 			},
+			git_files = {
+				theme = "dropdown",
+				previewer = true,
+				hidden = false,
+			},
 			live_grep = {
 				theme = "dropdown",
 				previewer = false,
