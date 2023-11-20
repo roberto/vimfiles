@@ -1,4 +1,0 @@
-if has("gui_macvim")
-  map <D-F> :tabnew<CR>:Grep 
-endif
-
