@@ -34,6 +34,13 @@ local config = function()
     },
   })
 
+  -- clojure
+  lspconfig.clojure_lsp.setup({
+    capabilities = capabilities,
+    on_attach = on_attach,
+    filetypes = { "clojure", "edn" },
+  })
+
   -- json
   lspconfig.jsonls.setup({
     capabilities = capabilities,
