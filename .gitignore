@@ -1,1 +1,4 @@
 plugged/
+spell/
+.lsp/
+.clj-kondo/
