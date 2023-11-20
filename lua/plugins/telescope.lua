@@ -1,3 +1,5 @@
+-- luacheck: globals vim
+
 local mapkey = require("util.keymapper").mapkey
 
 local config = function()
@@ -18,11 +20,11 @@ local config = function()
 			},
 			live_grep = {
 				theme = "dropdown",
-				previewer = false,
+				previewer = true,
 			},
 			buffers = {
 				theme = "dropdown",
-				previewer = false,
+				previewer = true,
 			},
 		},
 	})

@@ -1,3 +1,5 @@
+-- luacheck: globals vim
+
 local vim_modes = {
 	n = "n",
 	i = "i",
@@ -33,18 +35,18 @@ local get_mode = function(vimmode)
 	end
 end
 
---- @param command (string)
---- @return string
+--- @param command (string|function)
+--- @return (string|function)
 local get_cmd_string = function(command)
-  if type(command) == "string" then
-	  return [[<cmd>]] .. command .. [[<CR>]]
-  else
-    return command
-  end
+	if type(command) == "string" then
+		return [[<cmd>]] .. command .. [[<CR>]]
+	else
+		return command
+	end
 end
 
 --- @param keymaps string String
---- @param command string String
+--- @param command (string|function)
 --- @param vimmode (string|nil)
 --- @param options (table|nil)
 --- @return nil
