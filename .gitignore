@@ -8,3 +8,4 @@ foo.*
 data
 .lsp/
 .clj-kondo/
+spell/
