@@ -53,14 +53,14 @@ return {
 	dependencies = { "nvim-lua/plenary.nvim" },
 	config = config,
 	keys = {
-		mapkey("<leader><leader>", "Telescope git_files show_untracked=true"),
-		mapkey("<leader>ff", "Telescope find_files"),
-		mapkey("<leader>fg", "Telescope live_grep"),
-		mapkey("<leader>fw", "Telescope grep_string"), -- current selection
-		mapkey("<leader>fb", "Telescope buffers"),
-		mapkey("<leader>fr", "Telescope resume"),
-		mapkey("<leader>fk", "Telescope keymaps"),
-		mapkey("<leader>fh", "Telescope help_tags"),
-		mapkey("<leader>fa", vim.find_files_from_project_git_root),
+		mapkey("<leader><leader>", "Telescope git_files show_untracked=true", {desc = "Files"}),
+		mapkey("<leader>ff", "Telescope find_files", {desc = "All files"}),
+		mapkey("<leader>fg", "Telescope live_grep", {desc = "Grep"}),
+		mapkey("<leader>fw", "Telescope grep_string", {desc = "Word"}),
+		mapkey("<leader>fb", "Telescope buffers", {desc = "Open buffer"}),
+		mapkey("<leader>fr", "Telescope resume", {desc = "Resume"}),
+		mapkey("<leader>fk", "Telescope keymaps", {desc = "Keymaps"}),
+		mapkey("<leader>fh", "Telescope help_tags", {desc = "Help tags"}),
+		mapkey("<leader>fa", vim.find_files_from_project_git_root, {desc = "All files (git root)"}),
 	},
 }

@@ -48,7 +48,7 @@ end
 --- @param vimmode (string|nil)
 --- @param options (table|nil)
 --- @return nil
-local mapkey = function(keymaps, command, vimmode, options)
+local mapkey = function(keymaps, command, options, vimmode)
 	local mode = get_mode(vimmode)
 	local lhs = keymaps
 	local rhs = get_cmd_string(command)
