@@ -7,4 +7,3 @@ git clone git@github.com:roberto/vimfiles.git ~/.vim
 ```
 brew install ripgrep
 ```
-

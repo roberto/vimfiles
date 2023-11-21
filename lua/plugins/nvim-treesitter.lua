@@ -24,8 +24,8 @@ local config = function()
 			"lua",
 			"dockerfile",
 			"gitignore",
-      "clojure",
-      "dart",
+			"clojure",
+			"dart",
 		},
 		auto_install = true,
 		highlight = {

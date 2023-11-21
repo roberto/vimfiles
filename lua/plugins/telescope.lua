@@ -3,32 +3,31 @@
 local mapkey = require("util.keymapper").mapkey
 
 local config = function()
-	local telescope = require("telescope")
-	telescope.setup({
-		defaults = {
-		},
-		pickers = {
-			find_files = {
-				theme = "dropdown",
-				previewer = false,
-				hidden = true,
-			},
-			git_files = {
-				theme = "dropdown",
-				previewer = true,
-				hidden = false,
-			},
-			live_grep = {
-				theme = "dropdown",
-				previewer = true,
-				hidden = false,
-			},
-			buffers = {
-				theme = "dropdown",
-				previewer = true,
-			},
-		},
-	})
+  local telescope = require("telescope")
+  telescope.setup({
+    defaults = {},
+    pickers = {
+      find_files = {
+        theme = "dropdown",
+        previewer = false,
+        hidden = true,
+      },
+      git_files = {
+        theme = "dropdown",
+        previewer = true,
+        hidden = false,
+      },
+      live_grep = {
+        theme = "dropdown",
+        previewer = true,
+        hidden = false,
+      },
+      buffers = {
+        theme = "dropdown",
+        previewer = true,
+      },
+    },
+  })
 end
 
 function vim.find_files_from_project_git_root()
@@ -50,21 +49,21 @@ function vim.find_files_from_project_git_root()
 end
 
 return {
-	"nvim-telescope/telescope.nvim",
-	tag = "0.1.4",
-	lazy = false,
-	dependencies = { "nvim-lua/plenary.nvim" },
-	config = config,
-	keys = {
-		mapkey("<leader><leader>", "Telescope git_files show_untracked=true", {desc = "Files"}),
-		mapkey("<leader>ff", "Telescope find_files", {desc = "All files"}),
-		mapkey("<leader>fg", "Telescope live_grep", {desc = "Grep"}),
-		mapkey("<leader>/", "Telescope live_grep", {desc = "Grep"}),
-		mapkey("<leader>fw", "Telescope grep_string", {desc = "Word"}),
-		mapkey("<leader>fb", "Telescope buffers", {desc = "Open buffer"}),
-		mapkey("<leader>fr", "Telescope resume", {desc = "Resume"}),
-		mapkey("<leader>fk", "Telescope keymaps", {desc = "Keymaps"}),
-		mapkey("<leader>fh", "Telescope help_tags", {desc = "Help tags"}),
-		mapkey("<leader>fa", vim.find_files_from_project_git_root, {desc = "All files (git root)"}),
-	},
+  "nvim-telescope/telescope.nvim",
+  tag = "0.1.4",
+  lazy = false,
+  dependencies = { "nvim-lua/plenary.nvim" },
+  config = config,
+  keys = {
+    mapkey("<leader><leader>", "Telescope git_files show_untracked=true", { desc = "Files" }),
+    mapkey("<leader>ff", "Telescope find_files", { desc = "All files" }),
+    mapkey("<leader>fg", "Telescope live_grep", { desc = "Grep" }),
+    mapkey("<leader>/", "Telescope live_grep", { desc = "Grep" }),
+    mapkey("<leader>fw", "Telescope grep_string", { desc = "Word" }),
+    mapkey("<leader>fb", "Telescope buffers", { desc = "Open buffer" }),
+    mapkey("<leader>fr", "Telescope resume", { desc = "Resume" }),
+    mapkey("<leader>fk", "Telescope keymaps", { desc = "Keymaps" }),
+    mapkey("<leader>fh", "Telescope help_tags", { desc = "Help tags" }),
+    mapkey("<leader>fa", vim.find_files_from_project_git_root, { desc = "All files (git root)" }),
+  },
 }

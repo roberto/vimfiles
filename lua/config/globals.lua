@@ -1,2 +1,4 @@
-vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
+-- luacheck: globals vim
+
+vim.g.mapleader = " "
 vim.g.maplocalleader = " "
