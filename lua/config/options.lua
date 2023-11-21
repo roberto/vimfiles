@@ -1,3 +1,5 @@
+-- luacheck: globals vim
+
 local opt = vim.opt
 
 -- Tab / Indentation

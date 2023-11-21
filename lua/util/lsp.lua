@@ -4,7 +4,7 @@ local M = {}
 
 -- set keymaps on the active lsp server
 M.on_attach = function(_, bufnr)
-  mapkey("<leader>cf", "Lspsaga finder", { buffer = bufnr, desc = "Definition finder" })
+  mapkey("<leader>ce", "Lspsaga finder", { buffer = bufnr, desc = "Reference explorer" })
   mapkey("<leader>cd", "Lspsaga peek_definition", { buffer = bufnr, desc = "Peek definition" })
   mapkey("<leader>ci", "Lspsaga goto_definition", { buffer = bufnr, desc = "Definition" })
   mapkey("<leader>ca", "Lspsaga code_action", { buffer = bufnr, desc = "Code action" })
