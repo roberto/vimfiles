@@ -43,6 +43,13 @@ local config = function()
     filetypes = { "clojure", "edn" },
   })
 
+  -- dart
+  lspconfig.dartls.setup({
+    capabilities = capabilities,
+    on_attach = on_attach,
+    filetypes = { "dart" },
+  })
+
   -- json
   lspconfig.jsonls.setup({
     capabilities = capabilities,
