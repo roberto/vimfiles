@@ -1,5 +1,3 @@
--- luacheck: globals vim
-
 local on_attach = require("util.lsp").on_attach
 local diagnostic_signs = require("util.lsp").diagnostic_signs
 

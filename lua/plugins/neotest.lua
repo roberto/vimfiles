@@ -1,5 +1,3 @@
--- luacheck: globals vim
-
 return {
 	"nvim-neotest/neotest",
 	lazy = false,

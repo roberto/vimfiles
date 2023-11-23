@@ -1,4 +1,3 @@
--- luacheck: globals vim
 local mapkey = require("util.keymapper").mapkey
 local keymap = vim.keymap
 

@@ -1,5 +1,3 @@
--- luacheck: globals vim
-
 local vim_modes = {
 	n = "n",
 	i = "i",

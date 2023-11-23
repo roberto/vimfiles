@@ -1,5 +1,3 @@
--- luacheck: globals vim
-
 return {
   {
     "Olical/conjure",
