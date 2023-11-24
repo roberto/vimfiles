@@ -13,5 +13,5 @@ keymap.set("v", ">", ">gv")
 -- Formatting
 
 mapkey("<leader>cf", function()
-	vim.lsp.buf.format({ name = "efm", async = true })
+  vim.lsp.buf.format({ name = "efm", async = true })
 end, { desc = "Format" })
