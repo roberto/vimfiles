@@ -28,6 +28,7 @@ opt.completeopt = "menuone,noinsert,noselect"
 
 -- Behaviour
 
+opt.timeoutlen = 300 -- time to wait for a mapped sequence to complete. changed to improve whichkey experience
 opt.hidden = true
 opt.errorbells = false
 opt.swapfile = false
