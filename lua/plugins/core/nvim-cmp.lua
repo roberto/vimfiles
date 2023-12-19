@@ -7,7 +7,7 @@ return {
       return {}
     end,
     init = function()
-      require("luasnip.loaders.from_lua").load({ paths = "~/.config/lua-snippets" })
+      require("luasnip.loaders.from_lua").load({ paths = { "~/.config/lua-snippets" } })
     end,
   },
   {
