@@ -19,6 +19,7 @@ require("lazy").setup({
     { import = "plugins.core" },
     { import = "plugins.clojure" },
     { import = "plugins.dart" },
+    { import = "plugins.web" },
     { import = "plugins.pairing" },
     { import = "plugins.extras" },
   },
